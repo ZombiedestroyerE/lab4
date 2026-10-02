@@ -13,7 +13,7 @@ int main(){
     fscanf(file, "%d", &arr[i])
   }
   fclose(file);
-  sum_array(array,size);
-  
+  int total_sum = sum_array(array,size);
+  printf("The sum is: %d\n", total_sum);
   return 0;
 }
