@@ -18,3 +18,4 @@ sum_array:
 
     .Ldone:
       ret
+.section .note.GNU-stack,"",@progbits
