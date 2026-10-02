@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void sum_array(int *array, int size);
+extern int sum_array(int *array, int size);
 
 int main(){
   FILE *file = fopen("data.txt" , "r");
@@ -10,7 +10,7 @@ int main(){
   int array[size];
 
   for(int i =0; i < size; i++){
-    fscanf(file, "%d", &arr[i]);
+    fscanf(file, "%d", &array[i]);
   }
   fclose(file);
   int total_sum = sum_array(array,size);
